@@ -1,4 +1,10 @@
 <p>ini component servers</p>
 <button class="btn btn-primary" [disabled]="!allowNewServer">Tambah server</button>
+<!-- Ini property binding-->
+<p [innerText]="allowNewServer"></p>
+
+<!-- Ini string interpolation -->
+<p>{{allowNewServer}}</p>
+
 <app-server></app-server>
 <app-server></app-server>
