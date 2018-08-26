@@ -9,7 +9,7 @@
   class="form-control"
   [(ngModel)]="serverName">
 
-<p>{{serverName}}</p>
+<!--<p>{{serverName}}</p>-->
 
 <p>ini component servers</p>
 <button
@@ -19,7 +19,8 @@
 <!-- Ini property binding-->
 <!--<p [innerText]="allowNewServer"></p>-->
 
-<p>{{serverCreationStatus}}</p>
+<!--<p>{{serverCreationStatus}}</p>-->
+<p *ngIf="serverCreated">Server berhasil dibuat, bernama {{ serverName }}</p>
 
 <app-server></app-server>
 <app-server></app-server>
