@@ -22,5 +22,4 @@
 <!--<p>{{serverCreationStatus}}</p>-->
 <p *ngIf="serverCreated">Server berhasil dibuat, bernama {{ serverName }}</p>
 
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
